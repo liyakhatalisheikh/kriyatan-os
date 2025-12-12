@@ -16,8 +16,8 @@ export default function KriyatanLanding() {
       }} />
 
       {/* Navigation */}
-      <nav style={{ position: 'fixed', top: '1.5rem', left: 0, right: 0, zIndex: 50, display: 'flex', justifyContent: 'center', padding: '0 1.5rem' }}>
-        <div style={{
+      <nav style={{ position: 'fixed', top: '1rem', left: 0, right: 0, zIndex: 50, display: 'flex', justifyContent: 'center', padding: '0 1rem' }}>
+        <div className="nav-container" style={{
           backgroundColor: 'rgba(255, 255, 255, 0.9)',
           backdropFilter: 'blur(20px)',
           border: '1px solid rgb(226, 232, 240)',
@@ -26,46 +26,48 @@ export default function KriyatanLanding() {
           padding: '0.75rem 1.5rem',
           display: 'flex',
           alignItems: 'center',
-          gap: '2rem',
+          gap: '1rem',
           width: '100%',
           maxWidth: '80rem',
           justifyContent: 'space-between'
         }}>
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-            <svg style={{ width: '2rem', height: '2rem', color: '#f63859' }} viewBox="0 0 40 40" fill="none">
+            <svg style={{ width: '1.75rem', height: '1.75rem', color: '#f63859' }} viewBox="0 0 40 40" fill="none">
               <path d="M20 2L35.5 11V29L20 38L4.5 29V11L20 2Z" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.5" />
               <path d="M20 10L29 15.5V24.5L20 30L11 24.5V15.5L20 10Z" fill="currentColor" />
             </svg>
-            <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.25rem', color: '#0f172a' }}>
+            <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.125rem', color: '#0f172a' }}>
               Kriya<span style={{ color: '#f63859' }}>tan</span>
             </span>
           </a>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', fontSize: '0.875rem', fontWeight: 500 }}>
+          <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', fontSize: '0.875rem', fontWeight: 500 }}>
             <a href="#problem" style={{ color: '#64748b', textDecoration: 'none' }}>Why Us?</a>
             <a href="#features" style={{ color: '#64748b', textDecoration: 'none' }}>Features</a>
             <a href="#waitlist" style={{ color: '#64748b', textDecoration: 'none' }}>Early Access</a>
           </div>
 
-          <a href="#waitlist" style={{
+          <a href="#waitlist" className="nav-cta" style={{
             backgroundColor: '#0f172a',
             color: 'white',
-            padding: '0.5rem 1.25rem',
+            padding: '0.5rem 1rem',
             borderRadius: '9999px',
             fontSize: '0.75rem',
             fontWeight: 700,
             textDecoration: 'none',
             display: 'flex',
             alignItems: 'center',
-            gap: '0.5rem'
+            gap: '0.5rem',
+            whiteSpace: 'nowrap'
           }}>
-            Join Waitlist <span style={{ color: '#f63859' }}>→</span>
+            <span className="cta-text">Join Waitlist</span>
+            <span style={{ color: '#f63859' }}>→</span>
           </a>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section style={{ paddingTop: '10rem', paddingBottom: '5rem', paddingLeft: '1.5rem', paddingRight: '1.5rem', textAlign: 'center' }}>
+      <section style={{ paddingTop: '8rem', paddingBottom: '3rem', paddingLeft: '1rem', paddingRight: '1rem', textAlign: 'center' }}>
         <div style={{ maxWidth: '56rem', margin: '0 auto' }}>
           <div style={{
             display: 'inline-flex',
@@ -504,8 +506,27 @@ export default function KriyatanLanding() {
         </div>
       </footer>
 
-      {/* Add media query for desktop layout */}
+      {/* Responsive Styles */}
       <style jsx>{`
+        /* Mobile: Hide navigation menu links, show only logo and CTA */
+        @media (max-width: 767px) {
+          .nav-container {
+            padding: 0.625rem 1rem !important;
+          }
+          .nav-links {
+            display: none !important;
+          }
+          .cta-text {
+            display: none;
+          }
+          .nav-cta {
+            padding: 0.5rem !important;
+            min-width: 2.5rem;
+            justify-content: center;
+          }
+        }
+
+        /* Tablet and Desktop: Show full navigation */
         @media (min-width: 768px) {
           #features > div > div > div:nth-child(1) {
             grid-column: span 7 !important;
