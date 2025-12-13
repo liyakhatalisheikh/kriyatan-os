@@ -100,14 +100,13 @@ export default function KriyatanLanding() {
             marginBottom: '1.5rem',
             color: '#0f172a'
           }}>
-            Professionalize your<br />
-            <span style={{ color: '#f63859' }}>Creative Business.</span>
+            Get Paid Faster.<br />
+            <span style={{ color: '#f63859' }}>Look Professional.</span>
           </h1>
 
           <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '2.5rem', maxWidth: '42rem', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>
-            The operating system for Indian Creators. <br />
-            <strong>Sign Contracts. Send Invoices. Showcase your Media Kit.</strong> <br />
-            All in one dashboard.
+            The all-in-one OS for Indian Creators to manage <strong>Contracts</strong>, <strong>Invoices</strong>, and <strong>Brands</strong>.<br />
+            Stop chasing payments. Start building your empire.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', alignItems: 'center' }}>
@@ -136,7 +135,7 @@ export default function KriyatanLanding() {
             <div style={{ order: 2 }}>
               <div style={{ backgroundColor: '#f8fafc', borderRadius: '1rem', padding: '2rem', border: '1px solid rgb(226, 232, 240)' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', opacity: 0.75 }}>
-                  {['Creating invoices in Word/Canva', 'Getting ghosted on payments', 'Messy WhatsApp negotiations'].map((item, i) => (
+                  {['3-month payment delays', 'No legal protection', 'Lost in DM chaos', 'Vague \"exposure\" offers'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.875rem', color: '#64748b' }}>
                       <span style={{
                         width: '1.5rem',
@@ -161,7 +160,7 @@ export default function KriyatanLanding() {
                 Stop running your business on WhatsApp.
               </h2>
               <p style={{ color: '#64748b', lineHeight: 1.7, fontSize: '1.125rem' }}>
-                You are a media company, not just a channel. Kriyatan gives you the <strong>Contract</strong>, <strong>Invoice</strong>, and <strong>CRM</strong> infrastructure to deal with brands professionally.
+                You are a media company, not just a channel. Ghosting strategies, unpaid invoices, and vague DMs are costing you money. Kriyatan gives you the infrastructure to deal with brands professionally.
               </p>
             </div>
           </div>
@@ -222,7 +221,7 @@ export default function KriyatanLanding() {
                   <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Legal Shield</h3>
                 </div>
                 <p style={{ color: '#64748b', fontSize: '0.875rem', maxWidth: '28rem' }}>
-                  Never start work without an agreement. Use our pre-vetted legal templates to protect your payments.
+                  Never start work without an agreement. Use our pre-vetted legal templates (including Kill Fees & 50% Advance) to protect your payments.
                 </p>
               </div>
 
@@ -289,7 +288,7 @@ export default function KriyatanLanding() {
                   <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>Invoice Engine</h3>
                 </div>
                 <p style={{ color: '#94a3b8', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
-                  Generate professional, GST-compliant invoices in seconds.
+                  Generate professional, GST-compliant invoices in seconds. Send automated reminders so you don't have to.
                 </p>
 
                 <div style={{
@@ -356,7 +355,7 @@ export default function KriyatanLanding() {
               </div>
               <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Live Media Kit</h3>
               <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1rem' }}>
-                Your digital portfolio. Auto-updates your stats so you don't have to send outdated PDFs.
+                Your digital portfolio. Live links that auto-update your stats—no more outdated PDFs.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
                 <div style={{ backgroundColor: '#dcfce7', color: '#15803d', fontSize: '10px', fontWeight: 700, padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>High Eng.</div>
@@ -396,9 +395,9 @@ export default function KriyatanLanding() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Pitch Scripts</h3>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Pitch Intelligence</h3>
               <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1rem' }}>
-                Templates for negotiation and cold pitches.
+                Templates and strategies for negotiation and cold pitches.
               </p>
               <div style={{
                 backgroundColor: '#f8fafc',
@@ -480,7 +479,7 @@ export default function KriyatanLanding() {
           </div>
 
           <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '2.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem' }}>Secure your spot.</h2>
-          <p style={{ color: '#64748b', marginBottom: '2rem' }}>Join the waiting list for early access.</p>
+          <p style={{ color: '#64748b', marginBottom: '2rem' }}>Join the top 1% of creators professionalizing their workflow.</p>
 
           <WaitlistForm />
         </div>
