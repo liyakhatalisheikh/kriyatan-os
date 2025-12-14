@@ -73,23 +73,18 @@ export default function KriyatanLanding() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '0.5rem',
-            padding: '0.25rem 0.75rem',
-            borderRadius: '9999px',
             backgroundColor: 'white',
-            border: '1px solid rgb(226, 232, 240)',
-            fontSize: '10px',
-            fontWeight: 700,
-            color: '#64748b',
-            marginBottom: '2rem'
+            padding: '0.5rem 1rem',
+            borderRadius: '9999px',
+            boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+            marginBottom: '2rem',
+            border: '1px solid rgb(226, 232, 240)'
           }}>
-            <span style={{
-              width: '0.5rem',
-              height: '0.5rem',
-              borderRadius: '9999px',
-              backgroundColor: '#f63859',
-              animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-            }} />
-            Public Beta: Inviting Creators
+            <span style={{ position: 'relative', display: 'flex', height: '0.5rem', width: '0.5rem' }}>
+              <span style={{ position: 'absolute', display: 'inline-flex', height: '100%', width: '100%', borderRadius: '50%', backgroundColor: '#f43f5e', opacity: 0.75, animation: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite' }}></span>
+              <span style={{ position: 'relative', display: 'inline-flex', borderRadius: '50%', height: '0.5rem', width: '0.5rem', backgroundColor: '#f43f5e' }}></span>
+            </span>
+            <span style={{ fontSize: '0.875rem', fontWeight: 500, color: '#64748b' }}>Limited Early Access</span>
           </div>
 
           <h1 style={{
@@ -98,32 +93,59 @@ export default function KriyatanLanding() {
             fontWeight: 800,
             lineHeight: 1.1,
             marginBottom: '1.5rem',
-            color: '#0f172a'
+            color: '#0f172a',
+            position: 'relative'
           }}>
-            Get Paid Faster.<br />
-            <span style={{ color: '#f63859' }}>Look Professional.</span>
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '120%',
+              height: '100%',
+              background: 'linear-gradient(90deg, #3b82f6 0%, #ec4899 100%)',
+              filter: 'blur(80px)',
+              opacity: 0.15,
+              zIndex: -1,
+              pointerEvents: 'none'
+            }}></div>
+            The Professional OS for Indian Creators.<br />
+            <span style={{ color: '#f63859' }}>Get Paid on Time. Every Time.</span>
           </h1>
 
+          {/* Clean Spacer instead of cards */}
+          <div style={{ marginBottom: '3rem' }}></div>
+
           <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '2.5rem', maxWidth: '42rem', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>
-            The all-in-one OS for Indian Creators to manage <strong>Contracts</strong>, <strong>Invoices</strong>, and <strong>Brands</strong>.<br />
-            Stop chasing payments. Start building your empire.
+            Stop chasing payments. Manage your business with <strong>50% Advances</strong>, <strong>MSME-Compliant Invoices</strong>, and <strong>Legal Contracts</strong>.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', alignItems: 'center' }}>
             <a href="#waitlist" style={{
-              padding: '1rem 2rem',
               backgroundColor: '#f63859',
               color: 'white',
-              borderRadius: '0.75rem',
+              padding: '1rem 2rem',
+              borderRadius: '9999px',
+              fontFamily: 'Outfit, sans-serif',
               fontWeight: 700,
-              boxShadow: '0 20px 25px -5px rgba(246, 56, 89, 0.3)',
+              fontSize: '1.125rem',
               textDecoration: 'none',
-              display: 'inline-block',
-              transition: 'transform 0.2s'
-            }}>
+              transition: 'all 0.3s',
+              boxShadow: '0 4px 6px -1px rgba(246, 56, 89, 0.3), 0 2px 4px -1px rgba(246, 56, 89, 0.15)'
+            }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(246, 56, 89, 0.4), 0 4px 6px -2px rgba(246, 56, 89, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(246, 56, 89, 0.3), 0 2px 4px -1px rgba(246, 56, 89, 0.15)';
+              }}>
               Join the Waitlist
             </a>
-            <p style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Limited early access spots</p>
+            <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 500 }}>
+              Limited early access spots
+            </p>
           </div>
         </div>
       </section>
@@ -135,7 +157,7 @@ export default function KriyatanLanding() {
             <div style={{ order: 2 }}>
               <div style={{ backgroundColor: '#f8fafc', borderRadius: '1rem', padding: '2rem', border: '1px solid rgb(226, 232, 240)' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', opacity: 0.75 }}>
-                  {['3-month payment delays', 'No legal protection', 'Lost in DM chaos', 'Vague \"exposure\" offers'].map((item, i) => (
+                  {['Intentionally delayed payments', 'Unprotected work (No Contract)', 'Missing TDS deposits', 'Scope creep & exploitaton'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.875rem', color: '#64748b' }}>
                       <span style={{
                         width: '1.5rem',
@@ -157,10 +179,10 @@ export default function KriyatanLanding() {
             </div>
             <div style={{ order: 1 }}>
               <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.875rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem' }}>
-                Stop running your business on WhatsApp.
+                Stop risking your income.
               </h2>
               <p style={{ color: '#64748b', lineHeight: 1.7, fontSize: '1.125rem' }}>
-                You are a media company, not just a channel. Ghosting strategies, unpaid invoices, and vague DMs are costing you money. Kriyatan gives you the infrastructure to deal with brands professionally.
+                45% of Indian creators wait 90+ days for payment. Working without a contract is working unprotected. Kriyatan upgrades you to business-class protocols.
               </p>
             </div>
           </div>
@@ -218,10 +240,10 @@ export default function KriyatanLanding() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Legal Shield</h3>
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Engagement Protocol</h3>
                 </div>
                 <p style={{ color: '#64748b', fontSize: '0.875rem', maxWidth: '28rem' }}>
-                  Never start work without an agreement. Use our pre-vetted legal templates (including Kill Fees & 50% Advance) to protect your payments.
+                  Never start work without a commitment. Our explicit 50% Advance Agreements lock in serious clients and filter out time-wasters instantly.
                 </p>
               </div>
 
@@ -285,10 +307,10 @@ export default function KriyatanLanding() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>Invoice Engine</h3>
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>Commercial Invoice</h3>
                 </div>
                 <p style={{ color: '#94a3b8', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
-                  Generate professional, GST-compliant invoices in seconds. Send automated reminders so you don't have to.
+                  Send invoices that command respect. We automatically append MSME Compliance Seals to ensure finance teams prioritize your payout.
                 </p>
 
                 <div style={{
@@ -353,19 +375,19 @@ export default function KriyatanLanding() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Live Media Kit</h3>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Deal Manager</h3>
               <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1rem' }}>
-                Your digital portfolio. Live links that auto-update your stats—no more outdated PDFs.
+                Your data is your asset. Manage all your deals in a standardized, encrypted dashboard that no agency can spy on.
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
-                <div style={{ backgroundColor: '#dcfce7', color: '#15803d', fontSize: '10px', fontWeight: 700, padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>High Eng.</div>
-                <div style={{ backgroundColor: '#f1f5f9', color: '#475569', fontSize: '10px', fontWeight: 700, padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>Verified</div>
+                <div style={{ backgroundColor: '#dcfce7', color: '#15803d', fontSize: '10px', fontWeight: 700, padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>Private</div>
+                <div style={{ backgroundColor: '#f1f5f9', color: '#475569', fontSize: '10px', fontWeight: 700, padding: '0.25rem 0.5rem', borderRadius: '0.25rem' }}>Encrypted</div>
               </div>
             </div>
 
-            {/* Pitch Scripts - Takes 4 columns */}
+            {/* Verified Booking Page - Takes 6 columns (Half Width) */}
             <div style={{
-              gridColumn: 'span 12',
+              gridColumn: 'span 6',
               backgroundColor: 'white',
               border: '1px solid rgb(226, 232, 240)',
               borderRadius: '1.5rem',
@@ -383,8 +405,8 @@ export default function KriyatanLanding() {
               <div style={{
                 width: '2.5rem',
                 height: '2.5rem',
-                backgroundColor: 'rgba(246, 56, 89, 0.1)',
-                color: '#f63859',
+                backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                color: '#db2777',
                 borderRadius: '0.5rem',
                 display: 'flex',
                 alignItems: 'center',
@@ -392,67 +414,30 @@ export default function KriyatanLanding() {
                 marginBottom: '1rem'
               }}>
                 <svg style={{ width: '1.25rem', height: '1.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Pitch Intelligence</h3>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a', marginBottom: '0.5rem' }}>Booking Page</h3>
               <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1rem' }}>
-                Templates and strategies for negotiation and cold pitches.
+                A professional public profile. Brands fill a structured brief, effectively filtering out spam and low-ballers.
               </p>
               <div style={{
-                backgroundColor: '#f8fafc',
-                padding: '0.75rem',
+                backgroundColor: '#fdf2f8',
+                color: '#db2777',
+                border: '1px solid #fce7f3',
+                padding: '0.5rem 0.75rem',
                 borderRadius: '0.5rem',
-                border: '1px solid rgb(226, 232, 240)',
-                fontSize: '10px',
-                color: '#64748b',
-                fontFamily: 'monospace',
-                lineHeight: 1.5,
-                boxShadow: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)'
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
               }}>
-                "Hi [Brand], based on my audience demographics..."
+                <span>kriyatan.com/@you</span>
+                <svg style={{ width: '0.875rem', height: '0.875rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
               </div>
             </div>
 
-            {/* Rate Calculator - Takes 4 columns */}
-            <div style={{
-              gridColumn: 'span 12',
-              backgroundColor: 'white',
-              border: '1px solid rgb(226, 232, 240)',
-              borderRadius: '1.5rem',
-              padding: '2rem',
-              transition: 'all 0.3s'
-            }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 20px 40px -10px rgba(246, 56, 89, 0.08)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}>
-              <div style={{
-                width: '2.5rem',
-                height: '2.5rem',
-                backgroundColor: '#f1f5f9',
-                color: '#475569',
-                borderRadius: '0.5rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '1rem'
-              }}>
-                <svg style={{ width: '1.25rem', height: '1.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, color: '#0f172a' }}>Rate Check</h3>
-              <p style={{ color: '#64748b', fontSize: '0.875rem', marginTop: '0.5rem', marginBottom: '1rem' }}>Quickly check market rates.</p>
-              <div style={{ borderTop: '1px solid rgb(241, 245, 249)', paddingTop: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase' }}>Est. Rate</span>
-                <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#f63859' }}>₹25k</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -533,10 +518,26 @@ export default function KriyatanLanding() {
           #features > div > div > div:nth-child(2) {
             grid-column: span 5 !important;
           }
-          #features > div > div > div:nth-child(3),
-          #features > div > div > div:nth-child(4),
-          #features > div > div > div:nth-child(5) {
-            grid-column: span 4 !important;
+          #features > div > div > div:nth-child(3) {
+            grid-column: span 6 !important;
+          }
+          #features > div > div > div:nth-child(4) {
+            grid-column: span 6 !important;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          #features > div > div > div:nth-child(1) {
+            grid-column: span 12 !important;
+          }
+          #features > div > div > div:nth-child(2) {
+            grid-column: span 12 !important;
+          }
+          #features > div > div > div:nth-child(3) {
+            grid-column: span 12 !important;
+          }
+          #features > div > div > div:nth-child(4) {
+             grid-column: span 12 !important;
           }
         }
       `}</style>

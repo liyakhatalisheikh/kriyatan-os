@@ -3,12 +3,12 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kriyatan | The Creator OS",
-  description: "The professional OS for Indian Creators: Invoices, Contracts, and Media Kits.",
+  title: "Kriyatan | The Professional OS for Indian Creators",
+  description: "Manage your creative business with 50% Advances, MSME-Compliant Invoices, and Ironclad Contracts. Stop chasing payments.",
   metadataBase: new URL('https://kriyatan.com'), // Replace with your actual domain
   openGraph: {
-    title: 'Kriyatan | The Creator OS',
-    description: 'Professionalize your creative business.',
+    title: 'Kriyatan | The Professional OS for Indian Creators',
+    description: 'Secure your income with standard business protocols.',
     url: 'https://kriyatan.com',
     siteName: 'Kriyatan',
     locale: 'en_IN',
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kriyatan | The Creator OS',
-    description: 'Professional tools for modern creators.',
+    title: 'Kriyatan | The Professional OS for Indian Creators',
+    description: 'Secure your income with standard business protocols.',
   },
 };
 

@@ -102,7 +102,7 @@ export default async function Image() {
                             fontWeight: 500,
                         }}
                     >
-                        The Creator OS
+                        The Professional OS for Creators
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@ export default async function Image() {
                         }}
                     />
                     <span style={{ fontSize: 24, fontWeight: 700, color: '#0f172a' }}>
-                        Now Accepting Early Access
+                        Secure Your Income
                     </span>
                 </div>
             </div>
