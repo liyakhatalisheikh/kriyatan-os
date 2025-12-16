@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
 
 // Image metadata
-export const alt = 'Kriyatan | The Creator OS';
+export const alt = 'Kriyatan | The Creator CRM';
 export const size = {
     width: 1200,
     height: 630,
@@ -102,7 +102,7 @@ export default async function Image() {
                             fontWeight: 500,
                         }}
                     >
-                        The Professional OS for Creators
+                        The First CRM for Creators
                     </div>
                 </div>
 

@@ -160,6 +160,9 @@ export default function WaitlistForm() {
                                 Quick question...
                             </h3>
                             <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1.5rem', textAlign: 'left' }}>
+                                Help us build the perfect CRM for you.
+                            </p>
+                            <p style={{ color: '#64748b', fontSize: '0.875rem', marginBottom: '1.5rem', textAlign: 'left' }}>
                                 What are your biggest challenges right now? (Select all that apply)
                             </p>
 

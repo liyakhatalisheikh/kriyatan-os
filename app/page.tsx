@@ -60,7 +60,7 @@ export default function KriyatanLanding() {
             gap: '0.5rem',
             whiteSpace: 'nowrap'
           }}>
-            <span className="cta-text">Join Waitlist</span>
+            <span className="cta-text">Get Early Access</span>
             <span style={{ color: '#f63859' }}>→</span>
           </a>
         </div>
@@ -84,7 +84,7 @@ export default function KriyatanLanding() {
               <span style={{ position: 'absolute', display: 'inline-flex', height: '100%', width: '100%', borderRadius: '50%', backgroundColor: '#f43f5e', opacity: 0.75, animation: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite' }}></span>
               <span style={{ position: 'relative', display: 'inline-flex', borderRadius: '50%', height: '0.5rem', width: '0.5rem', backgroundColor: '#f43f5e' }}></span>
             </span>
-            <span style={{ fontSize: '0.875rem', fontWeight: 500, color: '#64748b' }}>Limited Early Access</span>
+            <span style={{ fontSize: '0.875rem', fontWeight: 500, color: '#64748b' }}>CRM Early Access</span>
           </div>
 
           <h1 style={{
@@ -109,20 +109,20 @@ export default function KriyatanLanding() {
               zIndex: -1,
               pointerEvents: 'none'
             }}></div>
-            The Professional OS for Indian Creators.<br />
-            <span style={{ color: '#f63859' }}>Get Paid on Time. Every Time.</span>
+            The First CRM for<br />
+            <span style={{ color: '#f63859' }}>Indian Creators.</span>
           </h1>
 
-          {/* Clean Spacer instead of cards */}
           <div style={{ marginBottom: '3rem' }}></div>
 
           <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '2.5rem', maxWidth: '42rem', margin: '0 auto 2.5rem', lineHeight: 1.6 }}>
-            Stop chasing payments. Manage your business with <strong>50% Advances</strong>, <strong>MSME-Compliant Invoices</strong>, and <strong>Legal Contracts</strong>.
+            Manage Brands. Track Payments. Automate Contracts.<br />
+            <strong>Stop using WhatsApp to run your business.</strong> Kriyatan is your professional command center.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', alignItems: 'center' }}>
             <a href="#waitlist" style={{
-              backgroundColor: '#f63859',
+              backgroundColor: '#0f172a',
               color: 'white',
               padding: '1rem 2rem',
               borderRadius: '9999px',
@@ -131,33 +131,33 @@ export default function KriyatanLanding() {
               fontSize: '1.125rem',
               textDecoration: 'none',
               transition: 'all 0.3s',
-              boxShadow: '0 4px 6px -1px rgba(246, 56, 89, 0.3), 0 2px 4px -1px rgba(246, 56, 89, 0.15)'
+              boxShadow: '0 4px 6px -1px rgba(15, 23, 42, 0.3), 0 2px 4px -1px rgba(15, 23, 42, 0.15)'
             }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(246, 56, 89, 0.4), 0 4px 6px -2px rgba(246, 56, 89, 0.2)';
+                e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(15, 23, 42, 0.4), 0 4px 6px -2px rgba(15, 23, 42, 0.2)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(246, 56, 89, 0.3), 0 2px 4px -1px rgba(246, 56, 89, 0.15)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(15, 23, 42, 0.3), 0 2px 4px -1px rgba(15, 23, 42, 0.15)';
               }}>
-              Join the Waitlist
+              Get Early Access
             </a>
             <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: 500 }}>
-              Limited early access spots
+              Join the exclusive waitlist
             </p>
           </div>
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Problem Section (Why a CRM?) */}
       <section id="problem" style={{ padding: '4rem 1.5rem', backgroundColor: 'white', borderTop: '1px solid rgb(241, 245, 249)', borderBottom: '1px solid rgb(241, 245, 249)' }}>
         <div style={{ maxWidth: '72rem', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
             <div style={{ order: 2 }}>
               <div style={{ backgroundColor: '#f8fafc', borderRadius: '1rem', padding: '2rem', border: '1px solid rgb(226, 232, 240)' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', opacity: 0.75 }}>
-                  {['Intentionally delayed payments', 'Unprotected work (No Contract)', 'Missing TDS deposits', 'Scope creep & exploitaton'].map((item, i) => (
+                  {['"Can you resend the invoice?"', '"Where is the contract?"', '"Payment will be processed next week"', 'Lost in WhatsApp chats'].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.875rem', color: '#64748b' }}>
                       <span style={{
                         width: '1.5rem',
@@ -179,31 +179,30 @@ export default function KriyatanLanding() {
             </div>
             <div style={{ order: 1 }}>
               <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.875rem', fontWeight: 700, color: '#0f172a', marginBottom: '1rem' }}>
-                Stop risking your income.
+                You are a Business.<br />Run like one.
               </h2>
               <p style={{ color: '#64748b', lineHeight: 1.7, fontSize: '1.125rem' }}>
-                45% of Indian creators wait 90+ days for payment. Working without a contract is working unprotected. Kriyatan upgrades you to business-class protocols.
+                <strong style={{ color: '#0f172a' }}>What is a CRM?</strong> It's a <em>Client Relationship Manager</em>. Think of it as a "Pocket Manager" that tracks every deal, invoice, and contract for you, so you never look unprofessional or lose money again.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section - COMPLETELY REWRITTEN */}
+      {/* Features Section */}
       <section id="features" style={{ padding: '6rem 1.5rem' }}>
         <div style={{ maxWidth: '80rem', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.875rem', fontWeight: 700, color: '#0f172a' }}>The Creator OS</h2>
-            <p style={{ color: '#64748b', marginTop: '0.5rem' }}>What you get when you sign up.</p>
+            <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.875rem', fontWeight: 700, color: '#0f172a' }}>The Creator CRM</h2>
+            <p style={{ color: '#64748b', marginTop: '0.5rem' }}>Your entire business, organized in one place.</p>
           </div>
 
-          {/* Desktop & Mobile Responsive Grid Container */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(12, 1fr)',
             gap: '1.5rem'
           }}>
-            {/* Legal Shield - Takes 7 columns on desktop, full width on mobile */}
+            {/* Smart Contracts */}
             <div style={{
               gridColumn: 'span 12',
               backgroundColor: 'white',
@@ -240,20 +239,20 @@ export default function KriyatanLanding() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Engagement Protocol</h3>
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Smart Contracts</h3>
                 </div>
                 <p style={{ color: '#64748b', fontSize: '0.875rem', maxWidth: '28rem' }}>
-                  Never start work without a commitment. Our explicit 50% Advance Agreements lock in serious clients and filter out time-wasters instantly.
+                  Generate lawyer-approved contracts in 30 seconds. Lock in deliverables, payment terms, and rights before you start work.
                 </p>
               </div>
 
               <div style={{ marginTop: '2rem', backgroundColor: '#f8fafc', border: '1px solid rgb(241, 245, 249)', borderRadius: '0.75rem', padding: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
                   <div style={{ width: '0.5rem', height: '0.5rem', borderRadius: '9999px', backgroundColor: '#22c55e' }} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Active Agreement</span>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contract Active</span>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  {['50% Advance Payment', 'Kill Fee (Cancellation)'].map((clause, i) => (
+                  {['IP Rights Retained', '50% Advance Locked'].map((clause, i) => (
                     <div key={i} style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -265,14 +264,14 @@ export default function KriyatanLanding() {
                       boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)'
                     }}>
                       <span style={{ color: '#f63859', fontWeight: 700 }}>✓</span>
-                      <span style={{ fontSize: '0.75rem', color: '#1e293b' }}>Clause: {clause}</span>
+                      <span style={{ fontSize: '0.75rem', color: '#1e293b' }}>{clause}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            {/* Invoice Engine - Takes 5 columns on desktop */}
+            {/* Invoice Engine */}
             <div style={{
               gridColumn: 'span 12',
               backgroundColor: '#0f172a',
@@ -307,7 +306,7 @@ export default function KriyatanLanding() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>Commercial Invoice</h3>
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700 }}>Payment Pipeline</h3>
                 </div>
                 <p style={{ color: '#94a3b8', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
                   Send invoices that command respect. We automatically append MSME Compliance Seals to ensure finance teams prioritize your payout.
@@ -343,7 +342,7 @@ export default function KriyatanLanding() {
               }} />
             </div>
 
-            {/* Media Kit - Takes 4 columns */}
+            {/* Deal Manager - Takes 4 columns */}
             <div style={{
               gridColumn: 'span 12',
               backgroundColor: 'white',
