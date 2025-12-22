@@ -1,6 +1,7 @@
 
 import "./globals.css";
 import type { Metadata } from "next";
+import GoogleTagManager, { GoogleTagManagerNoScript } from "./components/GoogleTagManager";
 
 export const metadata: Metadata = {
   title: "Kriyatan | The Creator CRM (Client Relationship Manager)",
@@ -29,11 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <GoogleTagManager />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body style={{ margin: 0, padding: 0, backgroundColor: '#f8fafc' }}>
+        <GoogleTagManagerNoScript />
         {children}
       </body>
     </html>
